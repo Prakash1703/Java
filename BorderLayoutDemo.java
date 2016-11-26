@@ -207,23 +207,26 @@ public class BorderLayoutDemo implements ActionListener
 	
 	public void addComponentLeft(Container con,JFrame jf)
 	{
-		//	Border blackline;
-		//blackline = BorderFactory.createLineBorder(Color.black);
-	/*cnLeft.setBorder(blackline);
-	cnRight.setBorder(blackline);
-	cnTop.setBorder(blackline);
-	cnBottom.setBorder(blackline);*/
-			b1.setName("YELLOW");
-				b2.setName("YELLOW");
-				b3.setName("YELLOW");
-				b4.setName("BLUE");
-				b5.setName("BLACK");
-				b2.addActionListener(this);
-				b3.addActionListener(this);
-				b4.addActionListener(this);
-				b5.addActionListener(this);
+		Border blackline;
+		blackline = BorderFactory.createLineBorder(Color.black);
+		cnLeft.setBorder(blackline);
+		cnRight.setBorder(blackline);
+		cnTop.setBorder(blackline);
+		cnBottom.setBorder(blackline);
 				
-		GridLayout gl=new GridLayout(6,2);
+		b1.setName("YELLOW");
+		b2.setName("YELLOW");
+		b3.setName("YELLOW");
+		b4.setName("BLUE");
+		b5.setName("BLACK");
+
+		b1.addActionListener(this);
+		b2.addActionListener(this);
+		b3.addActionListener(this);
+		b4.addActionListener(this);
+		b5.addActionListener(this);
+				
+		GridLayout gl=new GridLayout(9,2);
 		cnLeft.setLayout(gl);
 		cnLeft.add(b1);
 		cnLeft.add(b2);
